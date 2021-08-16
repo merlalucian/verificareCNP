@@ -66,6 +66,10 @@ function verificareCNP($cnp)
 
     $control = $suma_totala % 11;
 
+    if($control == 10){
+        $control = 1;
+    }
+
     if ($control != $cnp[12]) {
 
         return false;
