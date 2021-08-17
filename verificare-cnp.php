@@ -1,5 +1,5 @@
 <?php
-function verificareCNP($cnp)
+function verificareCNP(string $cnp) :bool
 {
 
     if (preg_match('#[^0-9]#', $cnp)) {
